@@ -45,13 +45,7 @@ npx prisma init
 
 This will create a prisma/schema.prisma file and set up a .env file if one doesn't exist.
 
-### 4. Migrate the database
-
-```bash
-npx prisma migrate dev --name init
-```
-
-### 5. Set up environment variables
+### 4. Set up environment variables
 
 Create a `.env` file and set up your variables:
 
@@ -63,6 +57,12 @@ EMAIL_SMTP_HOST="smtp.gmail.com"
 EMAIL_SMTP_PORT=465
 GMAIL_SMTP_USER="your-email"
 GMAIL_SMTP_PASS="your-app-password"
+```
+
+### 5. Migrate the database
+
+```bash
+npx prisma migrate dev --name init
 ```
 
 ### 6. Run the development server
